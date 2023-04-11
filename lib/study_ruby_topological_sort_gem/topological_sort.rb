@@ -1,7 +1,7 @@
-module StudyRubyToporogicalSortGem
-  class ToporogicalSort
+module StudyRubyTopologicalSortGem
+  class TopologicalSort
     def self.exec
-      puts "foo"
+      "foo"
     end
   end
 end
