@@ -2,9 +2,9 @@
 
 require "test_helper"
 
-class Study::Ruby::Topological::Sort::TestGem < Minitest::Test
+class TestStudyRubyTopologicalSortGem < Minitest::Test
   def test_that_it_has_a_version_number
-    refute_nil ::Study::Ruby::Topological::Sort::Gem::VERSION
+    refute_nil ::StudyRubyTopologicalSortGem::VERSION
   end
 
   def test_it_does_something_useful

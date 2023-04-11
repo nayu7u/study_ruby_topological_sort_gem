@@ -1,10 +1,10 @@
 # frozen_string_literal: true
 
-require_relative "lib/study/ruby/topological/sort/gem/version"
+require_relative "lib/study_ruby_topological_sort_gem/version"
 
 Gem::Specification.new do |spec|
-  spec.name = "study-ruby-topological-sort-gem"
-  spec.version = Study::Ruby::Topological::Sort::Gem::VERSION
+  spec.name = "study_ruby_topological_sort_gem"
+  spec.version = StudyRubyTopologicalSortGem::VERSION
   spec.authors = ["nayu7u"]
   spec.email = ["19748682+nayu7u@users.noreply.github.com"]
 

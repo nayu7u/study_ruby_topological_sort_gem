@@ -2,7 +2,7 @@
 
 source "https://rubygems.org"
 
-# Specify your gem's dependencies in study-ruby-topological-sort-gem.gemspec
+# Specify your gem's dependencies in study_ruby_topological_sort_gem.gemspec
 gemspec
 
 gem "rake", "~> 13.0"
