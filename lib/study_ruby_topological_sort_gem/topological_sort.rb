@@ -3,17 +3,17 @@ module StudyRubyTopologicalSortGem
     # graph: Array[Array[Integer, Integer]]
     def exec(graph)
       vlist = graph.flatten.sort.uniq
-      g = vlist.map { |v| [v, []]}.to_h
+      g = vlist.map { |v| [v, []] }.to_h
       deg = vlist.map { |v| [v, 0] }.to_h
       graph.each do |a, b|
         g[b] << a
         deg[a] += 1
       end
-      g.each { |k, v| [k, v.sort!]}
+      g.each { |k, v| [k, v.sort!] }
       queue = deg.select { |v, count| count.zero? }.map { |v, _| v }.sort
 
       order = []
-      while queue.size.positive? do
+      while queue.size.positive?
         v = queue.shift
         order << v
 

@@ -14,7 +14,7 @@ class TestTopologicalSort < Minitest::Test
       [4, 2],
       [4, 6],
       [6, 7],
-      [7, 0],
+      [7, 0]
     ]
     result = StudyRubyTopologicalSortGem::TopologicalSort.new.exec(graph)
     assert_equal(result, [4, 1, 6, 3, 2, 7, 0, 5])
@@ -28,10 +28,10 @@ class TestTopologicalSort < Minitest::Test
       [3, 5],
       [3, 1],
       [1, 0],
-      [0, 2],
+      [0, 2]
     ]
     result = StudyRubyTopologicalSortGem::TopologicalSort.new.exec(graph)
-    assert_equal(result, [3,1,0,4,5,2])
+    assert_equal(result, [3, 1, 0, 4, 5, 2])
   end
 
   def test_exec3
