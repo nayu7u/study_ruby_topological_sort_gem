@@ -9,7 +9,7 @@ module StudyRubyTopologicalSortGem
         g[b] << a
         deg[a] += 1
       end
-      g.each { |k, v| [k, v.sort!] }
+      g.each { |_, v| v.sort! }
       queue = deg.select { |v, count| count.zero? }.map { |v, _| v }.sort
 
       order = []
